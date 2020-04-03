@@ -1,0 +1,54 @@
+# Copyright (c) 2014-2015 Arduino LLC.  All right reserved.
+#
+# This library is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 2.1 of the License, or (at your option) any later version.
+#
+# This library is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with this library; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+menu.cache=Cache
+
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with this library; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+menu.cache=Cache
+
+robotistasmx_brainmx.name=brainmx 
+robotistasmx_brainmx.vid.0=0x1209
+robotistasmx_brainmx.pid.0=0xBFA1
+robotistasmx_brainmx.vid.1=0x1209
+robotistasmx_brainmx.pid.1=0xBFA1
+robotistasmx_brainmx.upload.tool=bossac
+robotistasmx_brainmx.upload.protocol=sam-ba
+robotistasmx_brainmx.upload.maximum_size=253952
+robotistasmx_brainmx.upload.offset=0x2000
+robotistasmx_brainmx.upload.use_1200bps_touch=true
+robotistasmx_brainmx.upload.wait_for_upload_port=true
+robotistasmx_brainmx.upload.native_usb=true
+robotistasmx_brainmx.build.mcu=cortex-m0plus
+robotistasmx_brainmx.build.f_cpu=48000000L
+robotistasmx_brainmx.build.usb_product="BrainMX"
+robotistasmx_brainmx.build.usb_manufacturer="BrainMX"
+robotistasmx_brainmx.build.board=brainmx
+robotistasmx_brainmx.build.core=arduino
+robotistasmx_brainmx.build.extra_flags=-DCRYSTALLESS -DARDUINO_SAMD_ZERO -D__SAMD21G18A__ -DARM_MATH_CM0PLUS {build.usb_flags}
+robotistasmx_brainmx.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+robotistasmx_brainmx.build.openocdscript=openocd_scripts/SAMD21G18A.cfg
+robotistasmx_brainmx.build.variant=brainmx
+robotistasmx_brainmx.build.variant_system_lib=
+robotistasmx_brainmx.build.vid=0x1209
+robotistasmx_brainmx.build.pid=0x2407
+robotistasmx_brainmx.bootloader.tool=openocd
+robotistasmx_brainmx.bootloader.file=bringmx/bootloader-BrainMX-v3.4.0-55-g9148e2a.bin
